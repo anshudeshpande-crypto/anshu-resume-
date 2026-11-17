@@ -1,0 +1,257 @@
+/* =========================================
+   1. RESET & BASE ELEMENT SELECTORS
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F7F6F0; /* Warm Cream Background */
+    color: #243029;            /* Deep Forest Charcoal Text */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    color: #1E3228;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #D3DDD5; /* Soft Sage Divider */
+}
+
+/* =========================================
+   2. NAVIGATION BAR (ID & POSITIONING)
+   ========================================= */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #EAE8DC; /* Slightly deeper cream for contrast */
+    border-bottom: 1px solid #D3DDD5;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A6B53; /* Primary Sage Green */
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #243029;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4A6B53;
+}
+
+/* =========================================
+   3. HERO HEADER SECTION (ID SELECTOR)
+   ========================================= */
+#header {
+    background-color: #4A6B53; /* Primary Sage Green */
+    color: #F7F6F0;            /* Cream Text */
+    padding: 5rem 20px;
+    text-align: center;
+}
+
+#header h1 {
+    color: #F7F6F0;
+    font-size: 2.8rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    color: #D3DDD5;
+    font-weight: 600;
+}
+
+.tagline {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+    color: #EAE8DC;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #F7F6F0;
+    color: #2F4836;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #D3DDD5;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   4. MAIN LAYOUT & CARDS (CLASS SELECTORS)
+   ========================================= */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main.container {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.section-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0DDD0;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(36, 48, 41, 0.04);
+}
+
+/* =========================================
+   5. EDUCATION SECTION (FLEXBOX CARDS)
+   ========================================= */
+.edu-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.edu-item {
+    flex: 1 1 350px;
+    background-color: #F7F6F0;
+    border-left: 4px solid #4A6B53;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #D3DDD5;
+    color: #2F4836;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.edu-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.institution {
+    font-weight: 600;
+    color: #4A6B53;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: #4F5D55;
+}
+
+/* =========================================
+   6. SKILLS PILLS
+   ========================================= */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-pill {
+    background-color: #EAE8DC;
+    color: #243029;
+    border: 1px solid #C8D3CA;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.skill-pill:hover {
+    background-color: #4A6B53;
+    color: #F7F6F0;
+    border-color: #4A6B53;
+}
+
+/* =========================================
+   7. CONTACT & FOOTER
+   ========================================= */
+.contact-box {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    text-decoration: none;
+    color: #4A6B53;
+    border: 1.5px solid #4A6B53;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.contact-item:hover {
+    background-color: #4A6B53;
+    color: #F7F6F0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #EAE8DC;
+    color: #4F5D55;
+    font-size: 0.9rem;
+    border-top: 1px solid #D3DDD5;
+}
